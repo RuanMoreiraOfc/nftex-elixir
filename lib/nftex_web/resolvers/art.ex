@@ -5,6 +5,10 @@ defmodule NftexWeb.Resolvers.Art do
     Arts.get(id)
   end
 
+  def list(_params, _ctx) do
+    Arts.list()
+  end
+
   def create(%{input: params}, _ctx) do
     Arts.create(params)
   end
